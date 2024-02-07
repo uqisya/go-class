@@ -1,2 +1,4 @@
 *.pdf
 *.json
+*.txt
+session-1\main.go
