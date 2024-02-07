@@ -40,6 +40,25 @@ func main() {
 		fmt.Printf("Hello, my name is %s and my age is %d years old\n", firstName, age2)
 	*/
 
+	// first := 15.125
+
+	// firstString := "2543"
+
+	// fmt.Println(first)
+
+	// status, _ := strconv.Atoi(firstString)
+
+	// fmt.Println(status)
+
+	// angkaString := "0234"
+
+	// angkaInt, _ := strconv.Atoi(angkaString)
+	// var angkaMurni int = 0234
+
+	// fmt.Println(angkaString)
+	// fmt.Println(angkaInt)
+	// fmt.Println(angkaMurni)
+
 	/*
 		// TIPE-TIPE DATA
 		// 1. Basic Type (number, string, boolean)
@@ -138,44 +157,64 @@ func main() {
 		}
 	*/
 
-	// LOOPING
-	// 1. For Loop
-	for i := 0; i < 3; i++ {
-		fmt.Println("Angka: ", i)
-	}
-
-	var i int = 0
-	for i < 3 {
-		fmt.Println("Angka: ", i)
-		i++
-	}
-
-	i = 0
-	for {
-		fmt.Println("Angka: ", i)
-		i++
-		if i == 3 {
-			break
+	/*
+		// LOOPING
+		// 1. For Loop
+		for i := 0; i < 3; i++ {
+			fmt.Println("Angka: ", i)
 		}
-	}
 
-	for i := 0; i < 5; i++ {
-		for j := i; j < 5; j++ {
-			fmt.Println(j, " ")
+		var i int = 0
+		for i < 3 {
+			fmt.Println("Angka: ", i)
+			i++
 		}
-		fmt.Println()
+
+		i = 0
+		for {
+			fmt.Println("Angka: ", i)
+			i++
+			if i == 3 {
+				break
+			}
+		}
+
+		for i := 0; i < 5; i++ {
+			for j := i; j < 5; j++ {
+				fmt.Println(j, " ")
+			}
+			fmt.Println()
+		}
+
+		// For range loop
+		var data []string
+		data = []string{"aaa", "bbb"}
+		for increment, content := range data {
+			fmt.Println("No ", increment+1, ":", content)
+		}
+
+		datas := []string{"a", "b", "c"}
+		for _, content := range datas {
+			fmt.Println(content)
+		}
+	*/
+
+	// switch case
+	score := 88
+	switch {
+	case score == 100:
+		fmt.Println("Perfect!")
+	case (score > 60) && (score < 100):
+		fmt.Println("Not bad")
+	default:
+		fmt.Println("Please study harder!")
 	}
 
 	// For range loop
-	var data []string
-	data = []string{"aaa", "bbb"}
-	for increment, content := range data {
-		fmt.Println("No ", increment+1, ":", content)
-	}
-
-	datas := []string{"a", "b", "c"}
-	for _, content := range datas {
-		fmt.Println(content)
-	}
+	// var data []string
+	// data = []string{"aaa", "bbb"}
+	// for _, content := range data {
+	// 	fmt.Println(content)
+	// }
 
 }
