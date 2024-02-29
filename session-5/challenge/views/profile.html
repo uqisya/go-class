@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/style.css" />
+        <title>
+            PROFILE PAGE
+        </title>
+    </head>
+    <body>
+        <div>
+            <h1>Profile Page</h1>
+            <hr>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    Email: {{$.Email}}
+                </li>
+                <li>
+                    Address: {{$.Address}}
+                </li>
+                <li>
+                    Job: {{$.Job}}
+                </li>
+                <li>
+                    Reason to be happy: {{$.Reason}}
+                </li>
+            </ul>
+        </div>
+        <a href="/">
+            <button>Logout</button>
+        </a>
+    </body>
+</html>

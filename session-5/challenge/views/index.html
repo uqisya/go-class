@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/style.css" />
+        <title>
+            LOGIN PAGE
+        </title>
+    </head>
+    <body>
+        <div>
+            <h1>Login Form</h1>
+            <hr>
+        </div>
+
+        <form action="/profile" method="post">
+            <div>
+                <label>Email address</label>
+                <input type="email" name="email_input" id="email" required>
+                <p>We will never share your email with anyone else</p>
+            </div>
+            <div>
+                <label>Password</label>
+                <input type="password" name="password_input" id="password" required>
+            </div>
+    
+            <button type="submit" class="btnLogin">Submit</button>
+        </form>
+
+        <hr>
+        <div>
+            <h3>List of available emails:</h3>
+            <ul>
+                Email : Password
+                {{range $value := .}}
+                <li>
+                    {{$value.Email}} : {{$value.Password}}
+                </li>
+                {{end}}
+            </ul>
+        </div>
+    </body>
+</html>
